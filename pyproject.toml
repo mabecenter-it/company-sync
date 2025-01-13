@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "company-sync"
+version = "0.1.0"
+description = ""
+authors = ["Jorge Devia <it@mabecenter.org>"]
+readme = "README.md"
+packages = [
+    {include = "WSClient", from = "company_sync"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+numpy = "2.0.0"
+pandas = "2.2.2"
+python-dateutil = "2.9.0.post0"
+pytz = "2024.1"
+six = "1.16.0"
+tqdm = "4.66.4"
+tzdata = "2024.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
