@@ -11,8 +11,8 @@
             "module": "company_sync",
             "envFile": "${workspaceFolder}/.venv",
             "args": [
-                "csv/policies.csv",
-                "Ambetter"
+                "csv/Policies_20250114__0126.csv",
+                "Molina"
             ],
         }
     ]
