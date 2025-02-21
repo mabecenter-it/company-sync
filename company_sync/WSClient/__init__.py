@@ -22,7 +22,7 @@ import urllib.request
 import hashlib
 
 # Vtiger Webservice Client
-class Vtiger_WSClient:
+class VTigerWSClient:
     def __init__(self, url):
         # Webservice file
         self._servicebase = 'webservice.php'
@@ -197,13 +197,14 @@ class Vtiger_WSClient:
     def doQuery(self, query):
         if not self.__checkLogin(): return False
 
+        sanitized_query = " ".join(query.split())
         # Make the query end with ;
-        if not query.endswith(';'): query += ';'
+        if not sanitized_query.endswith(';'): sanitized_query += ';'
 
         parameters = {
             'operation'   : 'query',
             'sessionName' : self._sessionid,
-            'query'       : query
+            'query'       : sanitized_query
         }
         response = self.__doGet(self._serviceurl, parameters)
         if self.hasError(response): return False
