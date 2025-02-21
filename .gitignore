@@ -6,3 +6,6 @@ __pycache__
 #Ignore the virtual environment
 .venv
 .env
+
+dist/
+*.log*

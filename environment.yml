@@ -8,7 +8,6 @@ dependencies:
   - python=3.12.*
   - cudatoolkit=11.8.*
   - cudf=24.12
-  - numpy
   - pip
   - pip:
       - "poetry>=1.2"

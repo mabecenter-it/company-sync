@@ -282,9 +282,7 @@ class Vtiger_WSClient:
         }
 
         response = self.__doPost(self._serviceurl, parameters)
-        if self.hasError(response): return False
-        result = response['result']
-        return result
+        return response
 
     '''
     Invoke webservice method
