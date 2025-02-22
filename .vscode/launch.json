@@ -11,7 +11,7 @@
             "module": "company_sync",
             "envFile": "${workspaceFolder}/.venv",
             "args": [
-                "csv/OscarBS.csv",
+                "csv/Oscar_INDIVIDUAL_Book_BeatrizSierra_20250221.csv",
                 "Oscar",
                 "BS"
             ],

@@ -6,11 +6,11 @@ authors = ["Jorge Devia <it@mabecenter.org>"]
 readme = "README.md"
 packages = [
     { include = "WSClient", from = "company_sync" },
-    { include = "CRMHandler", from = "company_sync" },
-    { include = "CSVHandler", from = "company_sync" },
-    { include = "CSVProcessor", from = "company_sync" },
-    { include = "SOProcessor", from = "company_sync" },
-    { include = "SOUpdater", from = "company_sync" },
+    { include = "handlers", from = "company_sync" },
+    { include = "processors", from = "company_sync" },
+    { include = "repositories", from = "company_sync" },
+    { include = "services", from = "company_sync" },
+    { include = "strategies", from = "company_sync" },
     { include = "company_sync" }
 ]
 

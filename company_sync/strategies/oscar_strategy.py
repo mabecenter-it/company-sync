@@ -22,8 +22,8 @@ class OscarStrategy(BaseStrategy):
         mapping = {
             "Member ID": "memberID",
             "Paid Through Date": "paidThroughDate",
-            "Coverage start date": "coverageStartDate",
-            "Coverage end date": "coverageEndDate",
+            "Coverage start date": "policyEffecDate",
+            "Coverage end date": "policyTermDate",
             "Policy status": "policyStatus",
         }
         return df.rename(columns=mapping)

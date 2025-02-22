@@ -6,18 +6,18 @@ import logging
 load_dotenv()
 
 # Configuración de VTiger
-VTIGER_HOST = os.getenv('VTIGER_HOST', 'http://192.168.99.102/vtigercrm_2022/')
-VTIGER_USERNAME = os.getenv('VTIGER_USERNAME', 'superadmin')
-VTIGER_TOKEN = os.getenv('VTIGER_TOKEN', 'MFaeyxCMTmRrUZiE')
+VTIGER_HOST = os.getenv('VTIGER_HOST')
+VTIGER_USERNAME = os.getenv('VTIGER_USERNAME')
+VTIGER_TOKEN = os.getenv('VTIGER_TOKEN')
 
 # Configuración de la base de datos
-DB_TYPE = os.getenv('DB_TYPE', 'mysql')
-DB_CONNECTOR = os.getenv('DB_CONNECTOR', 'pymysql')
-DB_HOST = os.getenv('DB_HOST', '192.168.99.117')
-DB_PORT = os.getenv('DB_PORT', '3307')
-DB_DATABASE = os.getenv('DB_DATABASE', 'vtigercrm_2022')
-DB_USERNAME = os.getenv('DB_USERNAME', 'root')
-DB_PASSWORD = os.getenv('DB_PASSWORD', '042285')
+DB_TYPE = os.getenv('DB_TYPE')
+DB_CONNECTOR = os.getenv('DB_CONNECTOR')
+DB_HOST = os.getenv('DB_HOST')
+DB_PORT = os.getenv('DB_PORT')
+DB_DATABASE = os.getenv('DB_DATABASE')
+DB_USERNAME = os.getenv('DB_USERNAME')
+DB_PASSWORD = os.getenv('DB_PASSWORD')
 
 SQLALCHEMY_DATABASE_URI = f'{DB_TYPE}+{DB_CONNECTOR}://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_DATABASE}'
 
